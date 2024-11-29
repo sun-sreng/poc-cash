@@ -1,3 +1,4 @@
+import { mockUseRouter } from '@/utils/router-utils';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
@@ -8,6 +9,7 @@ vi.mock('@tanstack/react-router', async () => {
   const actual = await vi.importActual('@tanstack/react-router');
   return {
     ...actual,
+    useRouter: () => mockUseRouter(),
     Link: ({ to, children }: { to: string; children: React.ReactNode }) => (
       <a href={to}>{children}</a>
     ),
