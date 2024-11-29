@@ -1,0 +1,7 @@
+.active {
+  color: var(--mui-palette-primary-main);
+}
+
+.link:hover {
+  color: var(--mui-palette-primary-main);
+}
