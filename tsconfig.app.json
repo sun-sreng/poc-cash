@@ -6,7 +6,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["vitest/globals", "node", "@playwright/test"],
+    "types": ["vitest/globals", "node"],
 
     /* Bundler mode */
     "moduleResolution": "Bundler",

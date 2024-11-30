@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './e2e-tests',
   webServer: {
     command: 'pnpm run dev', // Start Vite server
     port: 3000,
