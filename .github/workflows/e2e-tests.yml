@@ -12,14 +12,23 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [22.x]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.x
+
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
       - name: Install pnpm
