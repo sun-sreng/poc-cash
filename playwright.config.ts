@@ -11,5 +11,8 @@ export default defineConfig({
     baseURL: 'http://localhost:3000', // Update as needed
     browserName: 'chromium',
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
+    video: 'on',
   },
+  reporter: [['html', { outputFolder: 'playwright-report' }]],
 });
