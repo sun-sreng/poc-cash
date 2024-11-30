@@ -27,4 +27,4 @@ jobs:
         run: pnpm install
 
       - name: Run Playwright tests
-        run: pnpm test:e2e
+        run: pnpm dlx playwright test
