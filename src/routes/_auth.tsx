@@ -33,8 +33,9 @@ function RouteComponent() {
             <Paper sx={{ width: '379px', height: '96px', p: 2 }}>
               <img
                 src="/logo.svg"
-                alt="Logo"
+                alt="poc cash"
                 style={{ width: '100%', height: '100%' }}
+                data-testid="logo"
               />
             </Paper>
           </Box>

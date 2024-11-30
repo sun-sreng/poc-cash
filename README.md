@@ -12,8 +12,11 @@ pnpm dev
 # Create a production-ready build of the project
 pnpm build
 
-# Run the project's test suite
+# Run unit tests and integration tests for the project's test suite
 pnpm test
+
+# Run e2e tests
+pnpm test:e2e
 
 # Run linting to check code quality and style
 pnpm lint
@@ -35,3 +38,7 @@ pnpm format
 ## Integration Testing
 
 - src/layouts/site-header.test.tsx
+
+## E2E Testing
+
+- tests
